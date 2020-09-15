@@ -1,109 +1,108 @@
-/* general */
 * {
-	font-family: Arial, Helvetica, sans-serif;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 a {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 input::-webkit-inner-spin-button {
-	display: none;
+    display: none;
 }
 
 .down-arrow {
-	display: none;
+    display: none;
 }
 
 #container {
-	margin-top: 40px;
-	width: 650px;
+    margin-top: 40px;
+    width: 650px;
 }
 
 #title {
-	text-align: center;
-	font-size: 40px;
-	margin: 10px;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
 }
 
 #navbar {
-	background: darkblue;
-	display: flex;
-	margin-bottom: 20px;
+    background: darkblue;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 #navbar * {
-	padding: 5px;
-	color: white;
-	margin-left: 10px;
+    padding: 5px;
+    color: white;
+    margin-left: 10px;
 }
 
 #convert-field {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 #convert-field input,
 #convert-field select {
-	height: 30px;
-	border: solid black 1px;
-	border-radius: 5px;
-	font-size: 13px;
-	padding: 0;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 0;
 }
 
 #convert-field select option:click {
-	background-color: darkblue;
-	color: white;
+    background-color: darkblue;
+    color: white;
 }
 
 #convert-field .fa-arrow-right {
-	padding: 7px;
+    padding: 7px;
 }
 
 .convert-button {
-	text-align: center;
+    text-align: center;
 }
 
 .convert-button button {
-	padding: 10px;
-	border: 1px solid black;
-	cursor: pointer;
-	background: none;
-	border-radius: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
 }
 
 .convert-button button:hover {
-	color: white;
-	background: darkblue;
+    color: white;
+    background: darkblue;
 }
 
 @media only screen and (max-width: 650px) {
-	#container {
-		width: 350px;
-	}
+    #container {
+        width: 350px;
+    }
 
-	#convert-field {
-		flex-direction: column;
-		text-align: center;
-	}
+    #convert-field {
+        flex-direction: column;
+        text-align: center;
+    }
 
-	.right-arrow {
-		display: none;
-	}
+    .right-arrow {
+        display: none;
+    }
 
-	.down-arrow {
-		display: inline-block;
-		padding: 5px;
-	}
+    .down-arrow {
+        display: inline-block;
+        padding: 5px;
+    }
 }

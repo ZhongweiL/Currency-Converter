@@ -14,22 +14,22 @@ hbs.registerPartials(path.join(__dirname, "../public/templates/partials"));
 
 //render home page and about page
 app.get("/", (req, res) => {
-	res.render("index", { title: "Currency Converter" });
+    res.render("index", { title: "Currency Converter" });
 });
 
 app.get("/about", (req, res) => {
-	res.render("about", { title: "About" });
+    res.render("about", { title: "About" });
 });
 
 //render 404 page when the route is invalid
 app.get("/about/*", (req, res) => {
-	res.status(404).render("404", { title: "404", message: "Page not found!" });
+    res.status(404).render("404", { title: "404", message: "Page not found!" });
 });
 
 app.get("/*", (req, res) => {
-	res.status(404).render("404", { title: "404", message: "Page not found!" });
+    res.status(404).render("404", { title: "404", message: "Page not found!" });
 });
 
 app.listen(port, () => {
-	console.log(`Server is up on port ${port}`);
+    console.log(`Server is up on port ${port}`);
 });
