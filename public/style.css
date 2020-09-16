@@ -19,13 +19,17 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
+.right-arrow {
+    padding: 5px;
+}
+
 .down-arrow {
     display: none;
 }
 
 #container {
     margin-top: 40px;
-    width: 650px;
+    width: 850px;
 }
 
 #title {
@@ -37,13 +41,14 @@ input::-webkit-inner-spin-button {
 #navbar {
     background: darkblue;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #navbar * {
     padding: 5px;
     color: white;
     margin-left: 10px;
+    font-size: 25px;
 }
 
 #convert-field {
@@ -54,11 +59,12 @@ input::-webkit-inner-spin-button {
 
 #convert-field input,
 #convert-field select {
-    height: 30px;
+    height: 40px;
+    width: 170px;
     border: solid black 1px;
     border-radius: 5px;
-    font-size: 13px;
-    padding: 0;
+    font-size: 18px;
+    margin: 1px;
 }
 
 #convert-field select option:click {
@@ -75,6 +81,9 @@ input::-webkit-inner-spin-button {
 }
 
 .convert-button button {
+    font-size: 17px;
+    height: 40px;
+    width: 80px;
     padding: 10px;
     border: 1px solid black;
     cursor: pointer;
@@ -87,9 +96,9 @@ input::-webkit-inner-spin-button {
     background: darkblue;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
     #container {
-        width: 350px;
+        width: 450px;
     }
 
     #convert-field {
